@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="hi-Latn">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>For My Favourite Didi ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:wght@400;500&family=Caveat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="closed">
+    <!-- ===== SCENE: the closed envelope (first screen) ===== -->
+    <main class="scene" id="scene">
+      <div class="stage">
+        <p class="cap" id="cap">For My Favourite Didi ❤️</p>
+        <button
+          class="env"
+          id="env"
+          aria-label="Open the card. For My Favourite Didi"
+        >
+          <span class="env-back"></span>
+          <span class="paper-in"></span>
+          <span class="env-front"
+            ><span class="pk pkl"></span><span class="pk pkr"></span
+            ><span class="pk pkb"></span
+          ></span>
+          <span class="flap" id="flap"
+            ><span class="seal" id="seal">❤</span></span
+          >
+          <span class="cover">
+            <span class="cover-title">For My Favourite Didi ❤️</span>
+            <span class="cover-sub">A little something, just for you...</span>
+          </span>
+          <!-- CARD COVER: the collage image sits on the envelope and swings open on tap.
+               Change the picture: assets/images/cover.jpg -->
+          <span class="cardcover" id="cardcover">
+            <span class="cc-front"><img src="assets/images/cover.jpg" alt="Best Senior: a collage of memories" /></span>
+            <span class="cc-back"></span>
+          </span>
+        </button>
+        <p class="hint" id="hint">Tap to open.</p>
+      </div>
+    </main>
+
+    <!-- ===== BOOK: the letter ===== -->
+    <article class="book" id="book" aria-label="Letter for Didi">
+      <div class="sheet">
+        <section class="pg">
+          <p class="hand date r"><strong>20 May 2025.</strong></p>
+          <p class="r">
+            Jab main first time office aaya tha,<br />tab mujhe bilkul nahi pata
+            tha ki ye jagah<br />mujhe sirf ek job nahi,<br /><strong
+              >ek aisa rishta bhi degi jo mere liye itna important ho
+              jayega.</strong
+            >
+          </p>
+        </section>
+
+        <!-- PHOTO SLOT 1 : file name is set in script.js (MEDIA.p1) -->
+        <figure class="photo r" data-slot="p1"></figure>
+
+        <section class="pg">
+          <p class="r">
+            First month mujhe kuch samajh nahi aa raha tha.<br />Har step par
+            aapne samjhaya, guide kiya—<br />kabhi senior bankar, kabhi mentor
+            bankar,<br />aur kabhi bilkul <strong>Didi ki tarah</strong>, bina
+            irritate hue.
+          </p>
+        </section>
+
+        <!-- PHOTO SLOT 4 (office memory) -->
+        <figure class="photo r" data-slot="p4"></figure>
+
+        <section class="pg">
+          <p class="r">
+            Dheere-dheere pata hi nahi chala<br />kab sirf work ki baaton se<br />personal
+            life aur family tak ki baatein hone lagi.<br />Kab aapse baat karna
+            routine se zyada<br /><strong>apnapan</strong> ban gaya.
+          </p>
+        </section>
+
+        <!-- VIDEO SLOT 1 -->
+        <figure class="film r" data-slot="v1"></figure>
+
+        <hr class="fold" />
+
+        <section class="pg">
+          <p class="r">
+            Aur shayad isi liye May aur June ka woh waqt aaj bhi itna yaad aata
+            hai.
+          </p>
+        </section>
+
+        <!-- PHOTO SLOT 5 (new): put assets/images/photo-5.jpg -->
+        <figure class="photo r" data-slot="p5"></figure>
+
+        <!-- VIDEO SLOT 2 -->
+        <figure class="film r" data-slot="v2"></figure>
+
+        <section class="pg">
+          <p class="r">
+            Kabhi-kabhi poora din baatein hoti thi, aur phir bhi lagta tha ki
+            baatein khatam hi nahi hui. Us waqt shayad humne socha bhi nahi hoga
+            ki ye normal se lagne wale moments ek din itni khaas memories ban
+            jayenge.
+          </p>
+        </section>
+
+        <!-- VIDEO SLOT 3 -->
+        <figure class="film r" data-slot="v3"></figure>
+
+        <hr class="fold" />
+
+        <section class="pg">
+          <p class="r">
+            Phir <strong>11 July 2026</strong> ke baad dheere-dheere baatein kam
+            hone lagi. Aaj bhi nahi pata ki aisa kyun hua. Shayad circumstances
+            badle, shayad routine badal gaya, ya shayad waqt ke saath cheezein
+            pehle jaisi nahi rahin.
+          </p>
+          <p class="r">
+            Kabhi-kabhi sochta hoon ki jo baatein pehle itni aasani se ho jaati
+            thi, woh ab kyun nahi hoti. Lekin har badlaav ka koi ek jawab ho,
+            zaroori toh nahi.
+          </p>
+          <p class="r">
+            Mere liye aap hamesha woh senior rahengi, jinke saath office
+            aate-aate ek aisa rishta ban gaya jo sirf office tak limited nahi
+            raha — <strong>aap meri Didi ban gayin. ❤️</strong>
+          </p>
+        </section>
+
+        <!-- PHOTO SLOT 2 -->
+        <figure class="photo r" data-slot="p2"></figure>
+
+        <!-- VIDEO SLOT 7 (new): put assets/videos/clip-7.mp4 -->
+        <figure class="film r" data-slot="v7"></figure>
+
+        <section class="pg">
+          <p class="r">
+            Pata nahi main aapka best junior tha ya nahi,<br />aur office boy
+            wala title toh shayad mil hi sakta hai. <br />But honestly—<br /><strong
+              class="hand big"
+              >You will always be my favourite Senior,<br />and more
+              importantly, my Didi. ❤️</strong
+            >
+          </p>
+        </section>
+
+        <!-- VIDEO SLOT 4 -->
+        <figure class="film r" data-slot="v4"></figure>
+
+        <hr class="fold" />
+
+        <section class="pg">
+          <p class="r">
+            Aapki life ka ab ek naya chapter shuru ho raha hai.<br />Meri dil se
+            wish hai ki aage ka har step<br />aapko khushi, success aur sukoon
+            de.
+          </p>
+          <p class="r">
+            <strong
+              >Thank you for understanding me,<br />for guiding me,<br />and for
+              being a part of my life<br />that I will always remember with a
+              smile.</strong
+            >
+          </p>
+        </section>
+
+        <!-- VIDEO SLOT 5 -->
+        <figure class="film r" data-slot="v5"></figure>
+
+        <!-- PHOTO SLOT 3 -->
+        <figure class="photo r" data-slot="p3"></figure>
+
+        <!-- VIDEO SLOT 6 -->
+        <figure class="film r" data-slot="v6"></figure>
+        <!-- PHOTO SLOT 6 (new): assets/images/photo-6.jpg -->
+        <figure class="photo r" data-slot="p6"></figure>
+
+        <section class="pg">
+          <p class="r">
+            <strong
+              >20 May 2025 se shuru hui ye journey<br />sirf ek office memory
+              nahi hai—<br />mere liye ye ek aisa bond hai<br />jise main
+              hamesha dil se respect karunga. ❤️</strong
+            >
+          </p>
+
+          <p class="r">
+            <strong
+              >Aur haan Didi, agar kabhi meri kisi harkat se aap pareshan hui
+              ho, toh uske liye sorry.  Waise junior tha, thodi bahut nautanki
+              aur galtiyan toh banti hi thi! Bas umeed hai meri wajah se aapke
+              face par jitni baar smile aayi ho, woh meri galtiyon se zyada ho.
+              ❤️</strong
+            >
+          </p>
+        </section>
+      </div>
+
+      <!-- ===== Closing page ===== -->
+      <section class="closing" id="closing">
+        <div class="last r">
+          <p class="hand fin">Thank you for everything, Didi. ❤️</p>
+          <p class="sign">office boy</p>
+          <!-- edit/remove sign-off in index.html -->
+          <button class="again" id="close-card">Close the card</button>
+        </div>
+      </section>
+    </article>
+
+    <button
+      class="autoscroll"
+      id="autoscroll"
+      aria-label="Pause auto scroll"
+      hidden
+    >
+      ↓
+    </button>
+    <button class="music" id="music" aria-label="Play music" hidden>♪</button>
+    <audio id="bgm" src="assets/song12.mp3" loop preload="none"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
