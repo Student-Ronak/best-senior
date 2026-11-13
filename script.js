@@ -16,7 +16,7 @@ const MEDIA = {
   v4: { src: 'assets/videos/clip-4.mp4' },
   v5: { src: 'assets/videos/clip-5.mp4' },
   v6: { src: 'assets/videos/clip-6.mp4' },
-  v7: { src: 'assets/videos/clip-7.mp4' },                                   // NEW clip
+  v7: { src: 'assets/videos/clip-8.mp4' },                                   // NEW clip
 };
 // To add more clips: copy a <figure class="film" data-slot="v8"> in index.html and add v8 above.
 
